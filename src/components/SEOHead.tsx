@@ -19,7 +19,7 @@ const SEOHead = ({ titleAr, titleEn, descriptionAr, descriptionEn }: SEOHeadProp
     const title = lang === "ar" ? titleAr : titleEn;
     const description = lang === "ar" ? descriptionAr : descriptionEn;
     const canonicalUrl = `${BASE_URL}${location.pathname === "/" ? "" : location.pathname}`;
-    const ogImage = `${window.location.origin}/logo.png`;
+    const ogImage = `${window.location.origin}/og-image.jpg`;
 
     document.title = title;
 
