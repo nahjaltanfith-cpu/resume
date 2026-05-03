@@ -73,10 +73,10 @@ const Reports = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="التقارير | جمعية دعائم"
-        titleEn="Reports | Daaem Association"
-        descriptionAr="تقارير ووثائق جمعية دعائم - قرار التأسيس والتقارير السنوية."
-        descriptionEn="Reports and documents of Daaem Association - founding resolution and annual reports."
+        titleAr="التقارير | جماعة السيرة الذاتية الحياتية"
+        titleEn="Reports | Sira Group"
+        descriptionAr="تقارير ووثائق جماعة السيرة الذاتية الحياتية - قرار التأسيس والتقارير السنوية."
+        descriptionEn="Reports and documents of Sira Group - founding resolution and annual reports."
       />
       <div className="min-h-screen">
         <PageHero

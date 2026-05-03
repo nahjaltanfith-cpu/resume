@@ -15,10 +15,10 @@ const Strategy = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="التوجهات الاستراتيجية | جمعية دعائم"
-        titleEn="Strategic Directions | Daaem Association"
-        descriptionAr="التوجهات الاستراتيجية لجمعية دعائم بمحافظة الأحساء."
-        descriptionEn="Strategic directions of Daaem Association."
+        titleAr="التوجهات الاستراتيجية | جماعة السيرة الذاتية الحياتية"
+        titleEn="Strategic Directions | Sira Group"
+        descriptionAr="التوجهات الاستراتيجية لجماعة السيرة الذاتية الحياتية بمحافظة الأحساء."
+        descriptionEn="Strategic directions of Sira Group."
       />
       <div className="min-h-screen">
         

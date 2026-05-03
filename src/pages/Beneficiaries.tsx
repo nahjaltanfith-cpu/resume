@@ -36,10 +36,10 @@ const Beneficiaries = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="المستفيدين | جمعية دعائم"
-        titleEn="Beneficiaries | Daaem Association"
-        descriptionAr="الفئات المستفيدة من خدمات جمعية دعائم - الجهات الحكومية ومنظمات المجتمع المدني والقطاع الخاص."
-        descriptionEn="Beneficiary groups served by Daaem Association - government entities, civil society organizations, and private sector."
+        titleAr="المستفيدين | جماعة السيرة الذاتية الحياتية"
+        titleEn="Beneficiaries | Sira Group"
+        descriptionAr="الفئات المستفيدة من خدمات جماعة السيرة الذاتية الحياتية - الكتّاب والباحثون والمختصون والمجتمع الثقافي."
+        descriptionEn="Beneficiary groups served by Sira Group - government entities, civil society organizations, and private sector."
       />
       <div className="min-h-screen">
         <PageHero

@@ -34,10 +34,10 @@ const Projects = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="المشاريع والدورات | جمعية دعائم"
-        titleEn="Projects & Courses | Daaem Association"
-        descriptionAr="الدورات التدريبية لجمعية دعائم: مهارات التواصل، تعلّم الإنجليزية، تقنيات التميّز الدراسي."
-        descriptionEn="Daaem Association training courses: communication skills, English learning, and academic excellence techniques."
+        titleAr="المشاريع والدورات | جماعة السيرة الذاتية الحياتية"
+        titleEn="Projects & Courses | Sira Group"
+        descriptionAr="مشاريع ومبادرات جماعة السيرة الذاتية الحياتية: ورش كتابة السيرة الذاتية، قاعدة بيانات السير السعودية، ترجمة السير الذاتية."
+        descriptionEn="Sira Group training courses: communication skills, English learning, and academic excellence techniques."
       />
       <div className="min-h-screen">
         <PageHero title={t.projects.title[lang]} subtitle={t.projects.subtitle[lang]} />

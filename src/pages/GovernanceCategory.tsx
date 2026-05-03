@@ -36,15 +36,15 @@ const GovernanceCategory = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr={`${category.title_ar} | الحوكمة | جمعية دعائم`}
-        titleEn={`${category.title_en} | Governance | Daaem Association`}
-        descriptionAr={category.desc_ar || "وثائق الحوكمة في جمعية دعائم"}
-        descriptionEn={category.desc_en || "Governance documents at Daaem Association"}
+        titleAr={`${category.title_ar} | الحوكمة | جماعة السيرة الذاتية الحياتية`}
+        titleEn={`${category.title_en} | Governance | Sira Group`}
+        descriptionAr={category.desc_ar || "وثائق الحوكمة في جماعة السيرة الذاتية الحياتية"}
+        descriptionEn={category.desc_en || "Governance documents at Sira Group"}
       />
       <div className="min-h-screen">
         <PageHero
           title={title}
-          subtitle={isAr ? "أحد أقسام الحوكمة في جمعية دعائم" : "One of Daaem Association's governance sections"}
+          subtitle={isAr ? "أحد أقسام الحوكمة في جماعة السيرة الذاتية الحياتية" : "One of Sira Group's governance sections"}
         />
 
         <section className="py-10 bg-background">
