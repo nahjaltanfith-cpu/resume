@@ -306,6 +306,124 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Featured Projects — Sira Group signature */}
+        <section className="relative py-28 bg-background overflow-hidden">
+          <div className="absolute -top-32 -left-32 w-[28rem] h-[28rem] rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-accent/10 blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <AnimatedSection className="text-center mb-16 max-w-2xl mx-auto">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold mb-4 border border-secondary/20">
+                <Sparkles size={14} />
+                {lang === "ar" ? "مبادراتنا النوعية" : "Our Signature Initiatives"}
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-5 tracking-tight">
+                {lang === "ar" ? <>مشاريع <span className="text-gradient-gold">تُبقي السِّيَر</span> حيّة</> : <>Initiatives that <span className="text-gradient-gold">keep biographies</span> alive</>}
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                {lang === "ar"
+                  ? "ثلاثة محاور تصنع الفارق: التأليف، التوثيق، والترجمة — لإيصال السيرة السعودية إلى العالم."
+                  : "Three pillars: writing, documentation, and translation — bringing Saudi biography to the world."}
+              </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+              {t.projects.items.slice(0, 3).map((p: any, i: number) => {
+                const Icon = projectIcons[i] || Feather;
+                const title = lang === "ar" ? p.titleAr : p.titleEn;
+                const desc = lang === "ar" ? p.descAr : p.descEn;
+                return (
+                  <AnimatedSection key={i} delay={i * 0.12}>
+                    <motion.div
+                      whileHover={{ y: -10 }}
+                      transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                      className="group relative h-full rounded-3xl overflow-hidden bg-card border border-border shadow-card hover:shadow-card-hover transition-all duration-500"
+                    >
+                      <div className="relative aspect-[5/3] overflow-hidden">
+                        <img
+                          src={projectImages[i]}
+                          alt={title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.2s] ease-out"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/30 to-transparent" />
+                        <div className="absolute top-4 start-4 w-12 h-12 rounded-2xl gradient-gold flex items-center justify-center shadow-xl">
+                          <Icon className="text-gold-foreground" size={22} />
+                        </div>
+                        <span className="absolute top-4 end-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur-sm text-secondary text-[11px] font-bold">
+                          0{i + 1}
+                        </span>
+                        <h3 className="absolute bottom-4 inset-x-5 text-white font-bold text-lg md:text-xl leading-tight drop-shadow-lg">
+                          {title}
+                        </h3>
+                      </div>
+                      <div className="p-6">
+                        <p className="text-muted-foreground text-sm leading-relaxed mb-5 line-clamp-3">
+                          {desc}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <div className="w-10 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-20 transition-all duration-500" />
+                          <Link
+                            to="/projects"
+                            className="inline-flex items-center gap-1 text-secondary text-xs font-bold hover:text-accent transition-colors"
+                          >
+                            {lang === "ar" ? "اعرف المزيد" : "Learn more"}
+                            {lang === "ar" ? <ChevronLeft size={14} /> : <ChevronRight size={14} />}
+                          </Link>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </AnimatedSection>
+                );
+              })}
+            </div>
+
+            <AnimatedSection className="text-center mt-14">
+              <Link to="/projects">
+                <motion.span
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.96 }}
+                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-secondary/30 text-secondary font-bold hover:bg-secondary hover:text-secondary-foreground hover:border-secondary transition-all duration-300"
+                >
+                  {lang === "ar" ? "استعرض كل المشاريع" : "Explore all projects"}
+                  {lang === "ar" ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
+                </motion.span>
+              </Link>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Editorial quote — cultural signature */}
+        <section className="relative py-28 overflow-hidden bg-gradient-to-br from-[hsl(215_55%_22%)] via-[hsl(350_55%_28%)] to-[hsl(215_55%_15%)]">
+          <div
+            className="absolute inset-0 opacity-[0.07]"
+            style={{
+              backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+              backgroundSize: "28px 28px",
+            }}
+          />
+          <div className="absolute -top-24 right-1/4 w-80 h-80 rounded-full bg-accent/20 blur-3xl" />
+          <div className="absolute -bottom-24 left-1/4 w-80 h-80 rounded-full bg-secondary/30 blur-3xl" />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <AnimatedSection className="max-w-4xl mx-auto text-center">
+              <Quote className="mx-auto text-gold mb-6 opacity-90" size={56} strokeWidth={1.5} />
+              <p className="text-2xl md:text-4xl font-bold text-white leading-[1.7] mb-8 drop-shadow-lg">
+                {lang === "ar"
+                  ? <>«السِّيرة الذاتية ذاكرةُ أمّةٍ، ومرآةُ هويّةٍ، وجسرٌ يَعبُر بالأعلامِ من <span className="text-gradient-gold">المحلية</span> إلى <span className="text-gradient-gold">العالمية</span>».</>
+                  : <>"Biography is a nation's memory, the mirror of identity, a bridge that carries figures from the <span className="text-gradient-gold">local</span> to the <span className="text-gradient-gold">global</span>."</>}
+              </p>
+              <div className="flex items-center justify-center gap-3">
+                <div className="h-px w-12 bg-gold/60" />
+                <span className="text-gold text-sm font-bold tracking-wider uppercase">
+                  {lang === "ar" ? "جماعة السيرة الذاتية الحياتية" : "Sira Group"}
+                </span>
+                <div className="h-px w-12 bg-gold/60" />
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* CTA - Bordered Card */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
