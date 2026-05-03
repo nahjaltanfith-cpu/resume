@@ -327,7 +327,7 @@ const Index = () => {
               </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
               {t.projects.items.slice(0, 3).map((p: any, i: number) => {
                 const Icon = projectIcons[i] || Feather;
                 const title = lang === "ar" ? p.titleAr : p.titleEn;
@@ -339,7 +339,7 @@ const Index = () => {
                       transition={{ type: "spring", stiffness: 260, damping: 20 }}
                       className="group relative h-full rounded-3xl overflow-hidden bg-card border border-border shadow-card hover:shadow-card-hover transition-all duration-500"
                     >
-                      <div className="relative aspect-[5/3] overflow-hidden">
+                      <div className="relative aspect-[4/3] overflow-hidden">
                         <img
                           src={projectImages[i]}
                           alt={title}
