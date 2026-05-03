@@ -41,10 +41,10 @@ const Index = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="جمعية دعائم | جمعية دعائم بمحافظة الأحساء"
-        titleEn="Daaem Association | Non-Profit Sector Development in Al-Ahsa, Saudi Arabia"
-        descriptionAr="جمعية دعائم بمحافظة الأحساء - جمعية أهلية سعودية تعمل على تنمية وتمكين القطاع غير الربحي عبر ابتكار تدخلات ومشاريع ومنتجات مؤثرة ومستدامة في أبها والمملكة العربية السعودية."
-        descriptionEn="Daaem Association in Al-Ahsa, Saudi Arabia - innovative, impactful, and sustainable interventions and projects for the non-profit sector."
+        titleAr="جماعة السيرة الذاتية الحياتية | جمعية أهلية ثقافية بالرياض"
+        titleEn="Sira Group | Cultural Non-Profit Association in Riyadh, Saudi Arabia"
+        descriptionAr="جماعة السيرة الذاتية الحياتية - جمعية سعودية أهلية ثقافية مرخصة، مقرها الرياض، تُعنى بالسيرة الذاتية الحياتية والإبداع السيري ودعم رؤية المملكة 2030."
+        descriptionEn="Sira Group - A licensed Saudi cultural non-profit based in Riyadh, dedicated to biographical creativity and supporting Vision 2030."
       />
       <div className="min-h-screen">
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -68,8 +68,8 @@ const Index = () => {
             </motion.div>
           </AnimatePresence>
           
-          <div className="absolute inset-0 bg-gradient-to-br from-daaem-900/70 via-daaem-800/50 to-black/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-daaem-900/95 via-daaem-900/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-nama-900/70 via-nama-800/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-nama-900/95 via-nama-900/30 to-transparent" />
           {/* Subtle geometric accent layer */}
           <div className="absolute inset-0 opacity-[0.07] mix-blend-overlay" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, hsl(var(--gold)) 0%, transparent 40%), radial-gradient(circle at 80% 80%, hsl(var(--primary)) 0%, transparent 40%)" }} />
 
@@ -95,7 +95,7 @@ const Index = () => {
             >
               <img 
                 src={logo} 
-                alt="شعار جمعية دعائم - Daaem Association Logo" 
+                alt="شعار جماعة السيرة الذاتية الحياتية - Sira Group Logo" 
                 className="w-32 h-auto md:w-48 lg:w-56 object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]" 
               />
             </motion.div>

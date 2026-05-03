@@ -29,10 +29,10 @@ const About = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="عن الجمعية | جمعية دعائم"
-        titleEn="About Us | Daaem Association"
-        descriptionAr="تعرف على جمعية دعائم - رؤيتنا ورسالتنا وقيمنا وأهدافنا المؤسسية ومجلس الأمناء."
-        descriptionEn="Learn about Daaem Association - our vision, mission, values, institutional goals, and Board of Trustees."
+        titleAr="عن الجمعية | جماعة السيرة الذاتية الحياتية"
+        titleEn="About Us | Sira Group"
+        descriptionAr="تعرف على جماعة السيرة الذاتية الحياتية - رؤيتنا ورسالتنا وقيمنا وأهدافنا الثقافية ومجلس الإدارة."
+        descriptionEn="Learn about Sira Group - our vision, mission, values, institutional goals, and Board of Trustees."
       />
       <div className="min-h-screen bg-background selection:bg-nama-600 selection:text-white">
         <PageHero title={t.about.title[lang]} subtitle={t.about.subtitle[lang]} />
@@ -130,7 +130,7 @@ const About = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <AnimatedSection className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tight text-foreground">
-                {lang === "ar" ? <>أهداف <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">دعائم</span></> : <>Daaem <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">Goals</span></>}
+                {lang === "ar" ? <>أهداف <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">الجمعية</span></> : <>Our <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">Goals</span></>}
               </h2>
               <p className="text-muted-foreground text-xl max-w-2xl mx-auto font-light leading-relaxed">
                 {t.associationGoals.intro[lang]}

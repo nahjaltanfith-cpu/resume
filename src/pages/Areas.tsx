@@ -16,10 +16,10 @@ const Areas = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="مجالات العمل | جمعية دعائم"
-        titleEn="Work Areas | Daaem Association"
-        descriptionAr="تعرف على مجالات عمل جمعية دعائم في تنمية القطاع غير الربحي بمحافظة الأحساء - البحث والتطوير، بناء القدرات، والدعم المؤسسي."
-        descriptionEn="Discover Daaem Association's work areas in non-profit sector development in Al-Ahsa Governorate."
+        titleAr="مجالات العمل | جماعة السيرة الذاتية الحياتية"
+        titleEn="Work Areas | Sira Group"
+        descriptionAr="تعرف على مجالات عمل جماعة السيرة الذاتية الحياتية في الحركة الأدبية والثقافية بالمملكة العربية السعودية - الإبداع السيري، الدراسات والبحث، التدريب، والإنتاج الثقافي."
+        descriptionEn="Discover Sira Group's work areas in non-profit sector development in Al-Ahsa Governorate."
       />
       <div className="min-h-screen">
         

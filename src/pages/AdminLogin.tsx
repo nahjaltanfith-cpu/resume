@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Lock, User, Eye, EyeOff, AlertCircle } from "lucide-react";
 
-const ADMIN_USERNAME = "daaem_admin";
-const ADMIN_PASSWORD = "Daaem@2030!Secure";
+const ADMIN_USERNAME = "sira_admin";
+const ADMIN_PASSWORD = "Sira@2026!Heritage";
 
 const AdminLogin = () => {
   const [username, setUsername] = useState("");

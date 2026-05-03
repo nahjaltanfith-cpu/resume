@@ -36,7 +36,7 @@ const PageHero = ({ title, subtitle }: PageHeroProps) => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 mb-6">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-xs font-semibold text-white tracking-wider uppercase">
-              دعائم
+              جماعة السيرة
             </span>
           </div>
 

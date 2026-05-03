@@ -184,7 +184,7 @@ const AdminDashboard = () => {
               onUploaded={(url) => setLc({ ...lc, logo_url: url })}
               onRemove={() => setLc({ ...lc, logo_url: "" })}
             />
-            <SingleField label="البريد الإلكتروني" value={lc.contact_email || ""} onChange={(v) => setLc({ ...lc, contact_email: v })} placeholder="daaemedu@gmail.com" />
+            <SingleField label="البريد الإلكتروني" value={lc.contact_email || ""} onChange={(v) => setLc({ ...lc, contact_email: v })} placeholder="life.group@gmail.com" />
             <SingleField label="الموقع (عربي)" value={lc.contact_location_ar || ""} onChange={(v) => setLc({ ...lc, contact_location_ar: v })} dir="rtl" />
             <SingleField label="Location (English)" value={lc.contact_location_en || ""} onChange={(v) => setLc({ ...lc, contact_location_en: v })} />
 
@@ -357,9 +357,9 @@ const AdminDashboard = () => {
             <BiField label="العنوان الفرعي" {...getBi("about.subtitle")} multiline />
             <BiField label="من نحن" {...getBi("about.whoWeAre")} />
             <BiField label="نص من نحن" {...getBi("about.whoWeAreText")} multiline />
-            <BiField label="لماذا دعائم" {...getBi("about.whyNama")} />
+            <BiField label="لماذا جماعة السيرة" {...getBi("about.whyNama")} />
             <BiField label="قصة التأسيس" {...getBi("about.story")} multiline />
-            <h4 className="text-sm font-bold text-foreground px-1 pt-4">لماذا دعائم - النقاط</h4>
+            <h4 className="text-sm font-bold text-foreground px-1 pt-4">لماذا جماعة السيرة - النقاط</h4>
             {getItems("about.whyNamaItems").map((_, i) => (
               <div key={i} className="relative group">
                 <BiField label={`ميزة ${i + 1}`} {...getArr("about.whyNamaItems", i)} />

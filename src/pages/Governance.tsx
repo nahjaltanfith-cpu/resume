@@ -40,8 +40,8 @@ const governanceItems = [
   },
 ];
 
-const DEFAULT_PDF_EMBED = "/lai7a-asasiya-daaem.pdf";
-const DEFAULT_PDF_DOWNLOAD = "/lai7a-asasiya-daaem.pdf";
+const DEFAULT_PDF_EMBED = "/lai7a-asasiya-sira.pdf";
+const DEFAULT_PDF_DOWNLOAD = "/lai7a-asasiya-sira.pdf";
 
 const Governance = () => {
   const { lang } = useLang();
@@ -56,10 +56,10 @@ const Governance = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="الحوكمة | جمعية دعائم"
-        titleEn="Governance | Daaem Association"
-        descriptionAr="معايير الحوكمة والشفافية في جمعية دعائم - الهيكل المؤسسي ومجلس الأمناء والفريق التنفيذي."
-        descriptionEn="Governance and transparency standards at Daaem Association - institutional structure, Board of Trustees, and executive team."
+        titleAr="الحوكمة | جماعة السيرة الذاتية الحياتية"
+        titleEn="Governance | Sira Group"
+        descriptionAr="معايير الحوكمة والشفافية في جماعة السيرة الذاتية الحياتية - الهيكل المؤسسي ومجلس الأمناء والفريق التنفيذي."
+        descriptionEn="Governance and transparency standards at Sira Group - institutional structure, Board of Trustees, and executive team."
       />
       <div className="min-h-screen">
         <PageHero

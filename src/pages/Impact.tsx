@@ -15,10 +15,10 @@ const Impact = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="الأثر والإنجازات | جمعية دعائم"
-        titleEn="Impact & Achievements | Daaem Association"
-        descriptionAr="أثر وإنجازات جمعية دعائم في تنمية القطاع غير الربحي بمحافظة الأحساء."
-        descriptionEn="Impact and achievements of Daaem Association in non-profit sector development."
+        titleAr="الأثر والإنجازات | جماعة السيرة الذاتية الحياتية"
+        titleEn="Impact & Achievements | Sira Group"
+        descriptionAr="أثر وإنجازات جماعة السيرة الذاتية الحياتية في الحركة الأدبية والثقافية بالمملكة العربية السعودية."
+        descriptionEn="Impact and achievements of Sira Group in non-profit sector development."
       />
       <div className="min-h-screen">
         

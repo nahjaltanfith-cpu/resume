@@ -9,8 +9,8 @@ interface SEOHeadProps {
   descriptionEn: string;
 }
 
-const BASE_URL = "https://daaem.edu.sa";
-const OG_IMAGE = `${BASE_URL}/og-image.jpg`;
+const BASE_URL = "https://sira-group.org.sa";
+const OG_IMAGE = `${BASE_URL}/logo.png`;
 
 const SEOHead = ({ titleAr, titleEn, descriptionAr, descriptionEn }: SEOHeadProps) => {
   const { lang } = useLang();

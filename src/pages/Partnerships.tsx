@@ -15,10 +15,10 @@ const Partnerships = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="الشراكات | جمعية دعائم"
-        titleEn="Partnerships | Daaem Association"
-        descriptionAr="شراكات جمعية دعائم مع الجهات الحكومية والمنظمات لتنمية القطاع غير الربحي بمحافظة الأحساء."
-        descriptionEn="Daaem Association's partnerships with government and organizations for non-profit sector development."
+        titleAr="الشراكات | جماعة السيرة الذاتية الحياتية"
+        titleEn="Partnerships | Sira Group"
+        descriptionAr="شراكات جماعة السيرة الذاتية الحياتية مع الجهات الحكومية والمنظمات لالحركة الأدبية والثقافية بالمملكة العربية السعودية."
+        descriptionEn="Sira Group's partnerships with government and organizations for non-profit sector development."
       />
       <div className="min-h-screen">
         
