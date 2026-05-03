@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://daaem.edu.sa/sitemap.xml
+Sitemap: https://sira-group.org.sa/sitemap.xml
