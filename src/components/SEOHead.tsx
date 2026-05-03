@@ -10,7 +10,6 @@ interface SEOHeadProps {
 }
 
 const BASE_URL = "https://sira-group.org.sa";
-const OG_IMAGE = `${BASE_URL}/logo.png`;
 
 const SEOHead = ({ titleAr, titleEn, descriptionAr, descriptionEn }: SEOHeadProps) => {
   const { lang } = useLang();
@@ -20,6 +19,7 @@ const SEOHead = ({ titleAr, titleEn, descriptionAr, descriptionEn }: SEOHeadProp
     const title = lang === "ar" ? titleAr : titleEn;
     const description = lang === "ar" ? descriptionAr : descriptionEn;
     const canonicalUrl = `${BASE_URL}${location.pathname === "/" ? "" : location.pathname}`;
+    const ogImage = `${window.location.origin}/logo.png`;
 
     document.title = title;
 
@@ -37,11 +37,11 @@ const SEOHead = ({ titleAr, titleEn, descriptionAr, descriptionEn }: SEOHeadProp
     setMeta("og:title", title, "property");
     setMeta("og:description", description, "property");
     setMeta("og:url", canonicalUrl, "property");
-    setMeta("og:image", OG_IMAGE, "property");
-    setMeta("og:image:secure_url", OG_IMAGE, "property");
+    setMeta("og:image", ogImage, "property");
+    setMeta("og:image:secure_url", ogImage, "property");
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
-    setMeta("twitter:image", OG_IMAGE);
+    setMeta("twitter:image", ogImage);
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonical) {
