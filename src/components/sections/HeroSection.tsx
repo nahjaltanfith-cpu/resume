@@ -43,7 +43,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...springTransition, delay: 0.1 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-6 tracking-tight drop-shadow-lg"
+          className="text-5xl md:text-6xl lg:text-7xl font-black text-primary-foreground mb-6 tracking-tight drop-shadow-lg"
         >
           {t.hero.title[lang]}
         </motion.h1>
