@@ -130,7 +130,7 @@ const About = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <AnimatedSection className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tight text-foreground">
-                {lang === "ar" ? <>أهداف <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">دعائم</span></> : <>Sira Group <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">Goals</span></>}
+                {lang === "ar" ? <>أهداف <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">الجمعية</span></> : <>Our <span className="text-nama-600 italic text-transparent bg-clip-text bg-gradient-to-r from-nama-700 to-nama-500">Goals</span></>}
               </h2>
               <p className="text-muted-foreground text-xl max-w-2xl mx-auto font-light leading-relaxed">
                 {t.associationGoals.intro[lang]}

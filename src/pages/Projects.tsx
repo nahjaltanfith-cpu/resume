@@ -124,7 +124,7 @@ const Projects = () => {
                             {get("tagSkill", lang === "ar" ? "تطوير المهارات" : "Skill Development")}
                           </span>
                           <span className="px-3 py-1.5 rounded-lg bg-primary/5 text-primary text-xs font-semibold border border-primary/10">
-                            {get("tagLocation", lang === "ar" ? "محافظة الأحساء" : "Al-Ahsa")}
+                            {get("tagLocation", lang === "ar" ? "الرياض" : "Riyadh")}
                           </span>
                         </div>
                       </div>

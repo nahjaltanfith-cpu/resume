@@ -17,7 +17,7 @@ const Strategy = () => {
       <SEOHead
         titleAr="التوجهات الاستراتيجية | جماعة السيرة الذاتية الحياتية"
         titleEn="Strategic Directions | Sira Group"
-        descriptionAr="التوجهات الاستراتيجية لجماعة السيرة الذاتية الحياتية بمحافظة الأحساء."
+        descriptionAr="التوجهات الاستراتيجية لجماعة السيرة الذاتية الحياتية بالرياض."
         descriptionEn="Strategic directions of Sira Group."
       />
       <div className="min-h-screen">
