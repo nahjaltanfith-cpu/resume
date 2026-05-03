@@ -41,10 +41,10 @@ const Index = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="جمعية دعائم | جمعية دعائم بمحافظة الأحساء"
-        titleEn="Daaem Association | Non-Profit Sector Development in Al-Ahsa, Saudi Arabia"
-        descriptionAr="جمعية دعائم بمحافظة الأحساء - جمعية أهلية سعودية تعمل على تنمية وتمكين القطاع غير الربحي عبر ابتكار تدخلات ومشاريع ومنتجات مؤثرة ومستدامة في أبها والمملكة العربية السعودية."
-        descriptionEn="Daaem Association in Al-Ahsa, Saudi Arabia - innovative, impactful, and sustainable interventions and projects for the non-profit sector."
+        titleAr="جماعة السيرة الذاتية الحياتية | جمعية أهلية ثقافية بالرياض"
+        titleEn="Sira Group | Cultural Non-Profit Association in Riyadh, Saudi Arabia"
+        descriptionAr="جماعة السيرة الذاتية الحياتية - جمعية سعودية أهلية ثقافية مرخصة، مقرها الرياض، تُعنى بالسيرة الذاتية الحياتية والإبداع السيري ودعم رؤية المملكة 2030."
+        descriptionEn="Sira Group - A licensed Saudi cultural non-profit based in Riyadh, dedicated to biographical creativity and supporting Vision 2030."
       />
       <div className="min-h-screen">
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -95,7 +95,7 @@ const Index = () => {
             >
               <img 
                 src={logo} 
-                alt="شعار جمعية دعائم - Daaem Association Logo" 
+                alt="شعار جماعة السيرة الذاتية الحياتية - Sira Group Logo" 
                 className="w-32 h-auto md:w-48 lg:w-56 object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]" 
               />
             </motion.div>
