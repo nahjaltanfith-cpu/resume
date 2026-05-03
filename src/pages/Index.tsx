@@ -68,8 +68,8 @@ const Index = () => {
             </motion.div>
           </AnimatePresence>
           
-          <div className="absolute inset-0 bg-gradient-to-br from-daaem-900/70 via-daaem-800/50 to-black/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-daaem-900/95 via-daaem-900/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-nama-900/70 via-nama-800/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-nama-900/95 via-nama-900/30 to-transparent" />
           {/* Subtle geometric accent layer */}
           <div className="absolute inset-0 opacity-[0.07] mix-blend-overlay" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, hsl(var(--gold)) 0%, transparent 40%), radial-gradient(circle at 80% 80%, hsl(var(--primary)) 0%, transparent 40%)" }} />
 

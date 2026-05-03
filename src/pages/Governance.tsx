@@ -40,8 +40,8 @@ const governanceItems = [
   },
 ];
 
-const DEFAULT_PDF_EMBED = "/lai7a-asasiya-daaem.pdf";
-const DEFAULT_PDF_DOWNLOAD = "/lai7a-asasiya-daaem.pdf";
+const DEFAULT_PDF_EMBED = "/lai7a-asasiya-sira.pdf";
+const DEFAULT_PDF_DOWNLOAD = "/lai7a-asasiya-sira.pdf";
 
 const Governance = () => {
   const { lang } = useLang();
