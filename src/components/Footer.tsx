@@ -33,7 +33,7 @@ const Footer = () => {
               <motion.img 
                 whileHover={{ scale: 1.05 }}
                 src={logo} 
-                alt="شعار جمعية دعائم" 
+                alt="شعار جماعة السيرة الذاتية الحياتية" 
                 className="h-20 md:h-24 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
               />
             </Link>
@@ -42,8 +42,8 @@ const Footer = () => {
             </p>
             <p className="text-white/50 text-sm leading-relaxed max-w-md">
               {lang === "ar" 
-                ? "جمعية دعائم - جمعية أهلية تعليمية مرخصة بالأحساء، رقم الترخيص 1000700100" 
-                : "Daaem - A licensed educational NGO in Al-Ahsa, License No. 1000700100"}
+                ? "جماعة السيرة الذاتية الحياتية - جمعية أهلية ثقافية مرخصة بالرياض، رقم الترخيص 1000568500"
+                : "Sira Group - A licensed cultural NGO in Riyadh, License No. 1000568500"}
             </p>
           </div>
 
@@ -73,10 +73,10 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-5">
               {[
-                { icon: Mail, text: contactEmail || "daaemedu@gmail.com" },
-                { icon: MapPin, text: lang === "ar" ? (contactLocationAr || "الهفوف، محافظة الأحساء، المنطقة الشرقية") : (contactLocationEn || "Hofuf, Al-Ahsa Governorate, Eastern Province") },
-                { icon: Mail, text: "0538807776" },
-                { icon: Mail, text: "www.daaem.edu.sa" },
+                { icon: Mail, text: contactEmail || "life.group@gmail.com" },
+                { icon: MapPin, text: lang === "ar" ? (contactLocationAr || "الرياض، المملكة العربية السعودية") : (contactLocationEn || "Riyadh, Saudi Arabia") },
+                { icon: Mail, text: "0505226927" },
+                { icon: Mail, text: "12213" },
               ].map(({ icon: Icon, text }, i) => (
                 <div key={i} className="flex items-center gap-4 group cursor-pointer">
                   <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-500/10 group-hover:border-amber-500/30 transition-all duration-300 shadow-lg">
@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/50 font-medium">
-            © {new Date().getFullYear()} {lang === "ar" ? "جمعية دعائم" : "Daaem Association"}
+            © {new Date().getFullYear()} {lang === "ar" ? "جماعة السيرة الذاتية الحياتية" : "Sira Group"}
           </p>
           <p className="text-sm text-white/50">
             {t.footer.rights[lang]}

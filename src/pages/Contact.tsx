@@ -55,10 +55,10 @@ const Contact = () => {
   return (
     <PageTransition>
       <SEOHead
-        titleAr="تواصل معنا | جمعية دعائم"
-        titleEn="Contact Us | Daaem Association"
-        descriptionAr="تواصل مع جمعية دعائم - الهفوف، محافظة الأحساء. البريد: daaemedu@gmail.com"
-        descriptionEn="Contact Daaem Association - Abha, Al-Ahsa region. Email: daaemedu@gmail.com"
+        titleAr="تواصل معنا | جماعة السيرة الذاتية الحياتية"
+        titleEn="Contact Us | Sira Group"
+        descriptionAr="تواصل مع جماعة السيرة الذاتية الحياتية - الرياض. البريد: life.group@gmail.com"
+        descriptionEn="Contact Sira Group - Riyadh, Saudi Arabia. Email: life.group@gmail.com"
       />
       <div className="min-h-screen">
         
@@ -189,10 +189,10 @@ const Contact = () => {
                     </h3>
                     <div className="space-y-6">
                       {[
-                        { icon: Mail, label: lang === "ar" ? "البريد الإلكتروني" : "Email", value: contactEmail || "daaemedu@gmail.com" },
-                        { icon: Mail, label: lang === "ar" ? "الجوال" : "Phone", value: "0538807776" },
-                        { icon: Mail, label: lang === "ar" ? "الموقع" : "Website", value: "www.daaem.edu.sa" },
-                        { icon: MapPin, label: lang === "ar" ? "العنوان" : "Address", value: lang === "ar" ? (contactLocationAr || "الهفوف، محافظة الأحساء، المنطقة الشرقية") : (contactLocationEn || "Hofuf, Al-Ahsa Governorate, Eastern Province") },
+                        { icon: Mail, label: lang === "ar" ? "البريد الإلكتروني" : "Email", value: contactEmail || "life.group@gmail.com" },
+                        { icon: Mail, label: lang === "ar" ? "الجوال" : "Phone", value: "0505226927" },
+                        { icon: Mail, label: lang === "ar" ? "الرمز البريدي" : "Postal Code", value: "12213" },
+                        { icon: MapPin, label: lang === "ar" ? "العنوان" : "Address", value: lang === "ar" ? (contactLocationAr || "الرياض، المملكة العربية السعودية") : (contactLocationEn || "Riyadh, Saudi Arabia") },
                       ].map(({ icon: Icon, label, value }, i) => (
                         <motion.div key={i} whileHover={{ x: lang === "ar" ? -4 : 4 }} className="flex items-start gap-4 group">
                           <div className="w-12 h-12 rounded-xl gradient-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -223,14 +223,14 @@ const Contact = () => {
             </div>
             <div className="rounded-3xl overflow-hidden border border-border shadow-card">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115163!2d49.5!3d25.3833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e34f6e0e9bf9e5b%3A0x0!2sHofuf%20Saudi%20Arabia!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115897.2!2d46.6753!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title={lang === "ar" ? "موقع جمعية دعائم" : "Daaem Association Location"}
+                title={lang === "ar" ? "موقع جماعة السيرة الذاتية الحياتية" : "Sira Group Location"}
               />
             </div>
           </AnimatedSection>
