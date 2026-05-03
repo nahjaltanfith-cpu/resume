@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "@/i18n/LanguageContext";
-import { ArrowLeft, ArrowRight, Eye, Target, ChevronLeft, ChevronRight, Zap, Rocket, Puzzle, TrendingUp, Coins, Shield, HeartHandshake, Sparkles, Users, Lightbulb } from "lucide-react";
+import { ArrowLeft, ArrowRight, Eye, Target, ChevronLeft, ChevronRight, Zap, Rocket, Puzzle, TrendingUp, Coins, Shield, HeartHandshake, Sparkles, Users, Lightbulb, BookOpen, Languages, Database, Quote, Feather } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
 
@@ -12,10 +12,15 @@ import defaultLogo from "/logo.png";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
 import { useDynamicContent } from "@/hooks/useDynamicContent";
 
 const heroImages = [hero1, hero2, hero3];
 const directionIcons = [Zap, Rocket, Puzzle, TrendingUp, Coins];
+const projectImages = [project1, project2, project3];
+const projectIcons = [Feather, Database, Languages];
 
 const Index = () => {
   const { lang, t } = useLang();
