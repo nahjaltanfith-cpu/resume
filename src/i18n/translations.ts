@@ -12,7 +12,7 @@ export const translations = {
   },
   hero: {
     title: { ar: "جماعة السيرة الذاتية الحياتية", en: "Sira Group" },
-    subtitle: { ar: "للسيرة الذاتية والثقافة الأدبية", en: "For Biography & Literary Culture" },
+    subtitle: { ar: "", en: "" },
     description: {
       ar: "جمعية أهلية سعودية غير ربحية مرخصة، تسعى لتكوين هوية ثقافية وطنية اجتماعية عبر الإبداع السيري، ودعم رؤية المملكة 2030، وإبراز ثقافتها وهويتها العربية والإسلامية.",
       en: "A licensed Saudi non-profit association working to shape a national and social cultural identity through biographical creativity, supporting Vision 2030, and highlighting Arab and Islamic cultural heritage.",
