@@ -121,6 +121,7 @@ const Reports = () => {
                   title={lang === "ar" ? "قرار التأسيس" : "Founding Resolution"}
                   allow="autoplay"
                   sandbox="allow-scripts allow-same-origin allow-popups"
+                  loading="lazy"
                 />
               </div>
               <div className="flex justify-center mt-8">

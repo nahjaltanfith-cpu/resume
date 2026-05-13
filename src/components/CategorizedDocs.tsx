@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Download, FileCheck, FolderOpen, ChevronDown } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLang } from "@/i18n/LanguageContext";
@@ -33,6 +34,7 @@ interface Props {
 const CategorizedDocs = ({ docs, categories, uncategorizedLabel }: Props) => {
   const { lang } = useLang();
   const isAr = lang === "ar";
+  const [openItem, setOpenItem] = useState<string>("");
 
   const grouped: Record<string, DocItem[]> = {};
   for (const cat of categories) grouped[cat.key] = [];
@@ -70,7 +72,7 @@ const CategorizedDocs = ({ docs, categories, uncategorizedLabel }: Props) => {
               {isAr ? "لا توجد مستندات في هذا القسم حالياً" : "No documents in this section yet"}
             </div>
           ) : (
-          <Accordion type="single" collapsible className="divide-y divide-border">
+          <Accordion type="single" collapsible className="divide-y divide-border" value={openItem} onValueChange={setOpenItem}>
             {items.map((doc, i) => {
               const docTitle =
                 (isAr ? doc.title_ar : doc.title_en) ||
@@ -78,6 +80,7 @@ const CategorizedDocs = ({ docs, categories, uncategorizedLabel }: Props) => {
                 doc.title_en ||
                 (isAr ? `مستند ${i + 1}` : `Document ${i + 1}`);
               const value = `${cat.key}-${i}`;
+              const isOpen = openItem === value;
               return (
                 <AccordionItem key={value} value={value} className="border-b-0">
                   <AccordionTrigger className="px-6 py-4 hover:bg-muted/40 hover:no-underline group">
@@ -92,11 +95,14 @@ const CategorizedDocs = ({ docs, categories, uncategorizedLabel }: Props) => {
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6">
                     <div className="rounded-xl border border-border overflow-hidden bg-muted/20">
-                      <iframe
-                        src={doc.url}
-                        className="w-full h-[500px] md:h-[650px]"
-                        title={docTitle}
-                      />
+                      {isOpen && (
+                        <iframe
+                          src={doc.url}
+                          className="w-full h-[500px] md:h-[650px]"
+                          title={docTitle}
+                          loading="lazy"
+                        />
+                      )}
                     </div>
                     <div className="flex justify-center mt-5">
                       <motion.a
