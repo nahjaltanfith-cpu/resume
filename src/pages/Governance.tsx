@@ -41,8 +41,8 @@ const governanceItems = [
   },
 ];
 
-const DEFAULT_PDF_EMBED = lai7aAsset.url;
-const DEFAULT_PDF_DOWNLOAD = lai7aAsset.url;
+const DEFAULT_PDF_EMBED = "/scan.18.pdf";
+const DEFAULT_PDF_DOWNLOAD = "/scan.18.pdf";
 
 const Governance = () => {
   const { lang } = useLang();
