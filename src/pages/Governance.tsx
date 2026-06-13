@@ -10,6 +10,7 @@ import { useDynamicContent } from "@/hooks/useDynamicContent";
 import PdfViewer from "@/components/PdfViewer";
 import { Link } from "react-router-dom";
 import { GOVERNANCE_CATEGORIES } from "@/config/governanceCategories";
+import lai7aAsset from "@/assets/lai7a-asasiya.pdf.asset.json";
 
 
 const governanceItems = [
@@ -40,8 +41,8 @@ const governanceItems = [
   },
 ];
 
-const DEFAULT_PDF_EMBED = "/lai7a-asasiya-sira.pdf";
-const DEFAULT_PDF_DOWNLOAD = "/lai7a-asasiya-sira.pdf";
+const DEFAULT_PDF_EMBED = lai7aAsset.url;
+const DEFAULT_PDF_DOWNLOAD = lai7aAsset.url;
 
 const Governance = () => {
   const { lang } = useLang();
