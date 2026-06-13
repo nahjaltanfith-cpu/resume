@@ -160,7 +160,7 @@ const Governance = () => {
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl border border-border bg-card shadow-lg overflow-hidden">
                 <iframe
-                  src={`https://docs.google.com/gview?url=${encodeURIComponent(PDF_EMBED)}&embedded=true`}
+                  src={`${PDF_EMBED}#view=FitH`}
                   className="w-full h-[600px] md:h-[850px] bg-white"
                   title={lang === "ar" ? "اللائحة الأساسية" : "Basic Regulations"}
                 />
